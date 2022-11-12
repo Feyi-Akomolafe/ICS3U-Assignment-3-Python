@@ -1,34 +1,27 @@
-// Copyright (c) 2021 Feyi Akomolafe All rights reserved
+#!/usr/bin/env python3
 
-// Created by: Feyi Akomolafe
-// Created on: October 2022
-// This program finds the average of 3 integers 0-100
+# Created by: Feyi Akomolafe
+# Created on: Oct 2022
+# This program finds the average of 3 integers 0-100
 
-#include <iostream>
 
-int main() {
-    // This function finds the average of 3 integers 0-100
-    int integer1;
-    int integer2;
-    int integer3;
-    int the_sum;
-    int average;
+def main():
+    # This function finds the average of 3 integers 0-100
+    average = 0
 
-    // Input
-    std::cout << "Enter an integer (0-100): ";
-    std::cin >> integer1;
-    std::cout << "Enter an integer (0-100): ";
-    std::cin >> integer2;
-    std::cout << "Enter an integer (0-100): ";
-    std::cin >> integer3;
-    std::cout << "" << std::endl;
+    # Input
+    integer1 = int(input("Enter an integer (0-100): "))
+    integer2 = int(input("Enter an integer (0-100): "))
+    integer3 = int(input("Enter an integer (0-100): "))
 
-    // Process
-    the_sum = integer1 + integer2 + integer3;
-    average = the_sum / 3;
+    # Process
+    the_sum = integer1 + integer2 + integer3
+    average = the_sum / 3
+    # Output
+    print("The average is {0}".format(average))
 
-    // Output
-    std::cout << "The average is " << average << "." << std::endl;
+    print("\nDone.")
 
-    std::cout << "\nDone." << std::endl;
-}
+
+if __name__ == "__main__":
+    main()
